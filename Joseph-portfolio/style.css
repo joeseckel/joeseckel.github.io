@@ -1,0 +1,779 @@
+/* =================================
+GENERAL WEBSITE STYLES
+================================= */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 85px;
+}
+
+body {
+background-color: #f2efe8;
+color: #202126;
+font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.container {
+max-width: 1250px;
+}
+
+:root {
+--background: #f2efe8;
+--black: #202126;
+--orange: #f4513d;
+--blue: #b9c8ff;
+--gray: #77736d;
+}
+
+.section-padding {
+padding: 100px 0;
+}
+
+.eyebrow {
+font-family: 'DM Mono', monospace;
+font-size: 11px;
+letter-spacing: 2px;
+color: var(--gray);
+margin-bottom: 25px;
+}
+
+.section-description {
+color: var(--gray);
+line-height: 1.8;
+max-width: 650px;
+margin-bottom: 45px;
+}
+
+
+/* =================================
+NAVIGATION
+================================= */
+
+.navbar {
+background-color: var(--background);
+padding: 18px 0;
+}
+
+.navbar-brand {
+font-size: 28px;
+font-weight: bold;
+color: var(--black);
+letter-spacing: -2px;
+}
+
+.navbar-brand span {
+color: var(--orange);
+}
+
+.nav-link {
+color: var(--black);
+font-family: 'DM Mono', monospace;
+font-size: 11px;
+margin-left: 20px;
+text-transform: uppercase;
+}
+
+.nav-link:hover {
+color: var(--orange);
+}
+
+.navbar-toggler {
+border: 1px solid var(--black);
+}
+
+
+/* =================================
+HERO SECTION
+================================= */
+
+.hero {
+padding: 100px 0;
+min-height: 650px;
+display: flex;
+align-items: center;
+}
+
+.diamond {
+display: inline-block;
+width: 9px;
+height: 9px;
+background-color: var(--orange);
+transform: rotate(45deg);
+margin-right: 12px;
+}
+
+.hero h1 {
+font-size: clamp(45px, 5vw, 68px);
+font-weight: 600;
+letter-spacing: -4px;
+line-height: 1;
+margin-bottom: 25px;
+}
+
+.hero h1 span {
+color: var(--orange);
+text-decoration: underline;
+text-decoration-thickness: 3px;
+text-underline-offset: 7px;
+}
+
+.intro {
+max-width: 420px;
+color: #555a62;
+font-size: 16px;
+line-height: 1.8;
+}
+
+.hero-buttons {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 30px;
+margin-top: 35px;
+}
+
+.dark-button {
+display: inline-block;
+background-color: var(--black);
+color: white;
+padding: 17px 23px;
+border: none;
+text-decoration: none;
+font-size: 14px;
+font-weight: 600;
+box-shadow: 6px 6px var(--orange);
+transition: 0.3s;
+cursor: pointer;
+}
+
+.dark-button:hover {
+background-color: var(--orange);
+color: white;
+transform: translate(3px, 3px);
+box-shadow: 3px 3px var(--black);
+}
+
+.blue-link {
+color: #0874ef;
+font-weight: bold;
+text-decoration: underline;
+text-underline-offset: 5px;
+}
+
+.blue-link:hover {
+color: var(--orange);
+}
+
+
+/* =================================
+PROFILE PHOTO
+================================= */
+
+.photo-frame {
+height: 450px;
+position: relative;
+border: 2px solid var(--black);
+box-shadow: 12px 12px var(--black);
+overflow: hidden;
+background-color: #b9c8ff;
+}
+
+.photo-frame img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.photo-label {
+position: absolute;
+top: 15px;
+left: 15px;
+background-color: #17283c;
+color: white;
+padding: 10px;
+font-family: 'DM Mono', monospace;
+font-size: 10px;
+}
+
+.photo-caption {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+padding: 15px;
+color: white;
+background: rgba(23, 40, 60, 0.9);
+font-family: 'DM Mono', monospace;
+font-size: 11px;
+}
+
+
+/* =================================
+ABOUT ME
+================================= */
+
+.about {
+background-color: var(--blue);
+}
+
+.about-container {
+max-width: 970px;
+}
+
+.about h2 {
+font-size: clamp(55px, 7vw, 85px);
+font-weight: 600;
+letter-spacing: -6px;
+line-height: 0.95;
+margin-bottom: 50px;
+}
+
+.about h2 span {
+color: var(--orange);
+text-decoration: underline;
+}
+
+.about-text {
+max-width: 780px;
+color: #555e72;
+font-size: 18px;
+line-height: 1.8;
+}
+
+.about-text p {
+margin-bottom: 25px;
+}
+
+.about-bottom {
+display: grid;
+grid-template-columns: 180px 1fr;
+border-top: 3px solid var(--black);
+margin-top: 60px;
+padding-top: 30px;
+}
+
+.about-bottom span {
+color: var(--orange);
+font-size: 15px;
+}
+
+.about-bottom p {
+color: #596174;
+line-height: 1.6;
+}
+
+
+/* =================================
+RESUME
+================================= */
+
+.resume {
+background-color: var(--background);
+}
+
+.resume h2,
+.coursework h2,
+.portfolio h2 {
+font-size: clamp(45px, 6vw, 65px);
+font-weight: 600;
+letter-spacing: -4px;
+margin-bottom: 25px;
+}
+
+.resume h2 span,
+.coursework h2 span,
+.portfolio h2 span {
+color: var(--orange);
+text-decoration: underline;
+}
+
+.resume-content {
+border-top: 3px solid var(--black);
+}
+
+.resume-heading {
+font-size: 22px;
+font-weight: 600;
+margin-top: 35px;
+margin-bottom: 10px;
+}
+
+.resume-row {
+display: grid;
+grid-template-columns: 180px 1fr;
+gap: 15px;
+padding: 25px 0;
+border-bottom: 1px solid #d2cec5;
+}
+
+.resume-date {
+color: var(--orange);
+font-family: 'DM Mono', monospace;
+font-size: 12px;
+}
+
+.resume-row h4 {
+font-size: 21px;
+font-weight: 600;
+}
+
+.resume-row p {
+color: var(--gray);
+line-height: 1.6;
+}
+
+.resume-position {
+color: var(--black) !important;
+font-weight: 600;
+}
+
+.skill-list {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin: 20px 0 35px;
+}
+
+.skill-list span {
+border: 1px solid #c9c4bb;
+padding: 10px 15px;
+font-family: 'DM Mono', monospace;
+font-size: 11px;
+}
+
+.resume-button {
+margin-top: 20px;
+}
+
+
+/* =================================
+COURSEWORK
+================================= */
+
+.coursework {
+background-color: var(--blue);
+}
+
+.course-card {
+background-color: var(--background);
+border: 1px solid var(--black);
+box-shadow: 6px 6px var(--black);
+padding: 30px;
+height: 100%;
+transition: 0.3s;
+}
+
+.course-card:hover {
+transform: translateY(-5px);
+}
+
+.course-card > span {
+color: var(--orange);
+font-family: 'DM Mono', monospace;
+font-size: 10px;
+}
+
+.course-card h3 {
+font-size: 28px;
+font-weight: 600;
+margin: 22px 0;
+}
+
+.course-card p {
+color: var(--gray);
+line-height: 1.7;
+}
+
+.tags {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+margin-top: 20px;
+}
+
+.tags span {
+border: 1px solid #d2cec5;
+padding: 7px 10px;
+font-family: 'DM Mono', monospace;
+font-size: 10px;
+text-transform: uppercase;
+}
+
+.coursework-project {
+margin-top: 55px;
+padding: 30px;
+border-top: 3px solid var(--black);
+border-bottom: 1px solid #929dbb;
+}
+
+.coursework-project h3 {
+font-size: 25px;
+margin-bottom: 20px;
+}
+
+.coursework-project p {
+color: #555e72;
+line-height: 1.8;
+max-width: 800px;
+}
+
+
+/* =================================
+PORTFOLIO
+================================= */
+
+.portfolio {
+background-color: #f7f5ef;
+}
+
+.project-art {
+height: 350px;
+border: 2px solid var(--black);
+box-shadow: 8px 8px var(--black);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: relative;
+transition: 0.3s;
+}
+
+.project-art:hover {
+transform: translateY(-5px);
+}
+
+.donuts {
+background-color: var(--orange);
+color: var(--black);
+transform: rotate(-1deg);
+}
+
+.autobody {
+background-color: var(--blue);
+color: #18315f;
+transform: rotate(1deg);
+}
+
+.browser-dots {
+position: absolute;
+top: 18px;
+left: 18px;
+font-family: 'DM Mono', monospace;
+font-size: 10px;
+}
+
+.project-art small {
+position: absolute;
+top: 38%;
+font-family: 'DM Mono', monospace;
+font-size: 10px;
+}
+
+.project-art h3 {
+font-size: clamp(28px, 4vw, 42px);
+font-weight: bold;
+letter-spacing: -2px;
+text-align: center;
+transform: rotate(-5deg);
+padding: 0 10px;
+}
+
+.yellow-line,
+.red-line {
+height: 6px;
+width: 100px;
+margin-top: 15px;
+}
+
+.yellow-line {
+background-color: #f5d64c;
+}
+
+.red-line {
+background-color: var(--orange);
+}
+
+.project-number {
+position: absolute;
+bottom: 15px;
+right: 15px;
+font-family: 'DM Mono', monospace;
+font-size: 11px;
+}
+
+.project-info {
+padding-top: 30px;
+}
+
+.project-info h3 {
+font-size: 27px;
+font-weight: 600;
+margin-bottom: 15px;
+}
+
+.project-info h4 {
+font-size: 17px;
+font-weight: 600;
+margin-top: 30px;
+}
+
+.project-info > p:not(.eyebrow) {
+color: var(--gray);
+line-height: 1.7;
+}
+
+.project-screenshot {
+display: block;
+width: 100%;
+height: auto;
+margin: 15px 0;
+border: 2px solid var(--black);
+}
+
+.project-links {
+display: flex;
+flex-wrap: wrap;
+gap: 25px;
+margin-top: 20px;
+}
+
+.project-links a {
+color: #0874ef;
+font-weight: bold;
+text-decoration: underline;
+text-underline-offset: 5px;
+}
+
+
+/* =================================
+CONTACT
+================================= */
+
+.contact {
+background-color: var(--background);
+padding-bottom: 0;
+}
+
+.contact h2 {
+font-size: clamp(40px, 6vw, 65px);
+font-weight: 600;
+letter-spacing: -4px;
+line-height: 1;
+margin-bottom: 35px;
+}
+
+.contact h2 span {
+color: var(--orange);
+text-decoration: underline;
+}
+
+.contact-form {
+max-width: 800px;
+background-color: white;
+border: 1px solid #ccc;
+padding: 25px;
+margin: 40px 0;
+}
+
+.contact-form h3 {
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.contact-form p {
+color: var(--gray);
+margin-bottom: 25px;
+}
+
+.contact-form iframe {
+display: block;
+width: 100%;
+min-height: 650px;
+border: none;
+}
+
+.social-links {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+margin: 35px 0;
+}
+
+.social-links a {
+color: #0874ef;
+font-weight: bold;
+text-decoration: underline;
+text-underline-offset: 5px;
+}
+
+
+/* =================================
+FOOTER
+================================= */
+
+footer {
+border-top: 2px solid var(--black);
+margin-top: 120px;
+padding: 30px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+footer p,
+footer a {
+font-family: 'DM Mono', monospace;
+font-size: 10px;
+letter-spacing: 1px;
+color: var(--gray);
+text-decoration: none;
+margin: 0;
+}
+
+footer a:hover {
+color: var(--orange);
+}
+
+
+/* =================================
+PRINT RESUME
+================================= */
+
+@media print {
+
+body {
+background-color: white;
+}
+
+nav,
+.hero,
+.about,
+.coursework,
+.portfolio,
+.contact,
+.resume-button {
+display: none !important;
+}
+
+.resume {
+display: block !important;
+padding: 20px;
+}
+
+.resume-content {
+border-top: 2px solid black;
+}
+
+}
+
+
+/* =================================
+TABLET RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 991px) {
+
+.hero {
+padding: 70px 0;
+}
+
+.photo-frame {
+height: 400px;
+margin-top: 25px;
+}
+
+.nav-link {
+margin-left: 0;
+padding: 10px;
+}
+
+}
+
+
+/* =================================
+MOBILE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 576px) {
+
+.section-padding {
+padding: 65px 0;
+}
+
+.hero {
+padding: 45px 0;
+}
+
+.hero h1 {
+font-size: 45px;
+letter-spacing: -3px;
+}
+
+.photo-frame {
+height: 300px;
+box-shadow: 7px 7px var(--black);
+}
+
+.hero-buttons {
+gap: 20px;
+}
+
+.about h2 {
+font-size: 55px;
+}
+
+.about-text {
+font-size: 16px;
+}
+
+.about-bottom {
+grid-template-columns: 100px 1fr;
+}
+
+.resume-row {
+grid-template-columns: 1fr;
+gap: 10px;
+}
+
+.resume h2,
+.coursework h2,
+.portfolio h2 {
+font-size: 45px;
+}
+
+.project-art {
+height: 270px;
+}
+
+.project-art h3 {
+font-size: 30px;
+}
+
+.contact h2 {
+font-size: 42px;
+}
+
+.contact-form {
+padding: 15px;
+}
+
+.social-links {
+gap: 20px;
+}
+
+footer {
+flex-direction: column;
+align-items: flex-start;
+margin-top: 75px;
+}
+
+}
